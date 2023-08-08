@@ -19,6 +19,8 @@ import type { Airline, Passenger } from '@/type';
 import PassengerService from '@/services/PassengerService';
 import {ref, type Ref, watchEffect, computed, } from 'vue'
 import type { Axios, AxiosResponse } from 'axios';
+import router from '@/router';
+
 const passengers: Ref<Array<Passenger>> = ref([])
 const totalPassenger = ref<number>(0)
 // const airlines: Ref<Array<Airline>> = ref([])
